@@ -1,0 +1,17 @@
+@media print
+	hr
+		border: 0
+		page-break-after: always
+
+	tr
+		border-top: 1px solid
+		border-bottom: 1px solid
+
+		&:nth-child(2n)
+			background-color: #EEE
+
+		&:first-child
+			border-top: 0
+
+		&:last-child
+			border-bottom: 0

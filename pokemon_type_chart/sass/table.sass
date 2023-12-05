@@ -1,0 +1,46 @@
+/* Table */
+table
+	border-collapse: collapse
+	width: 100%
+
+
+/* Rows */
+tr:hover
+	background-color: rgba(128, 128, 128, .3333) !important
+
+@media screen
+	.cssOffensive tr:nth-child(2n+1)
+		background-color: rgba(255, 0, 0, .1667)
+
+	.cssDefensive tr:nth-child(2n+1)
+		background-color: rgba(0, 128, 255, .1667)
+
+	.cssCombined tr:nth-child(2n)
+		background-color: rgba(0, 192, 0, .1667)
+
+
+/* Cells */
+td, th
+	padding: 2px 8px
+	text-align: left
+
+.cssOffensive, .cssDefensive
+	td, th
+		width: 50%
+
+		&:first-child
+			text-align: right
+
+		&:nth-last-child(2)
+			text-align: center
+			width: 120px
+
+.cssCombined
+	td, th
+		width: 20%
+
+		&:first-child, &:nth-child(2)
+			text-align: right
+
+	td:nth-child(3)
+		text-align: center

@@ -1,0 +1,1 @@
+@media print{hr{border:0;page-break-after:always}tr{border-top:1px solid;border-bottom:1px solid}tr:nth-child(2n){background-color:#eee}tr:first-child{border-top:0}tr:last-child{border-bottom:0}}
